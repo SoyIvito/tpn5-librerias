@@ -43,7 +43,9 @@ print(f"La fecha y actual es {fecha}")
 devuelva un número par al azar entre 2 y 10 
 (pista: para comprobar si se pueden generar todos los números, pruebe ejecutar el programa dentro de un ciclo infinito).
 """
+#Al momento de probrar este ejercicio, quitar los comentarios
 
+"""
 import random
 
 a = int(2)
@@ -52,3 +54,29 @@ b = int(10)
 while True:
     numero = random.randint(a, b)
     print(f"{numero}")
+"""
+
+
+"""
+5. Bola mágica: La bola mágica (Magic 8 ball) es un popular juguete usado
+para la adivinación o para buscar consejo. Su mecanismo es muy simple:
+ante una pregunta del usuario, la bola responde con una de 8 posibles
+respuestas:
+- Es seguro que sí
+- Las chances son buenas
+- Puedes contar con ello
+- Pregúntame de nuevo más tarde
+- Concéntrate y pregunta de nuevo
+- No veo con claridad, intenta de nuevo
+- Mi respuesta es no
+- Mis fuentes me dicen que no
+Escriba una función en Python para simular la bola mágica.
+
+"""
+
+import random
+bola_magica = ["Es seguro que si", "Las chances son buenas", "Puedes contar con ello", "Preguntame de nuevo mas tarde", "Concentrate y pregunta de nuevo", "No veo con claridad, intenta de nuevo", "Mi respuesta es no", "Mis fuentes me dicen que no"]
+respuesta = random.choice(bola_magica)
+
+print(f"La bola magica dice {respuesta}")
+
