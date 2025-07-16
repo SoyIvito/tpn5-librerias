@@ -26,3 +26,29 @@ def suma_redondeo(a, b):
 a = float(input("Ingrese el primer numero decimal: "))
 b = float(input("Ingrese el segundo numero decimal: "))
 print(suma_redondeo(a,b))
+
+
+"""
+3. Usando el módulo datetime, 
+escribe un programa que muestre la fecha y hora actuales del sistema.
+"""
+
+from datetime import *
+fecha = datetime.now()
+print(f"La fecha y actual es {fecha}")
+
+
+"""
+4. Escriba un programa que 
+devuelva un número par al azar entre 2 y 10 
+(pista: para comprobar si se pueden generar todos los números, pruebe ejecutar el programa dentro de un ciclo infinito).
+"""
+
+import random
+
+a = int(2)
+b = int(10)
+
+while True:
+    numero = random.randint(a, b)
+    print(f"{numero}")
